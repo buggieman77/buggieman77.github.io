@@ -6,6 +6,8 @@ Each project is the result of my learning process, starting from understanding t
 
 I continue to learn and am open to input and collaboration opportunities so that I can develop further as a developer. Thank you for visiting my portfolio!
 
+link : [My Portofolio](https://buggieman77.netlify.app)
+
 ---
 
 ## ⚙ Project Setup ⚙
