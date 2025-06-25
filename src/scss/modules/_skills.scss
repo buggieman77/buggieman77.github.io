@@ -1,0 +1,75 @@
+/* ============================
+   ABOUT SCSS 
+   ============================ */
+
+@use "./mixins" as m;
+@use "./variables" as var;
+
+.skills {
+  background-color: var.$container-color;
+}
+
+.skills__container {
+  padding-bottom: 3.5rem;
+  row-gap: 3.5rem;
+}
+
+.skills__data {
+  text-align: center;
+}
+
+.skills__description {
+  margin-bottom: 2rem;
+}
+
+.skills__content,
+.skills__group {
+  display: grid;
+}
+
+.skills__content {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.skills__group {
+  row-gap: 1rem;
+  list-style: none;
+}
+
+.skills__item {
+  font-weight: var.$font-medium;
+  color: var.$title-color;
+}
+
+.skills-icon {
+  display: inline-block;
+  font-size: var(--bigger-font-size);
+}
+
+.html {
+  color: rgb(243, 97, 60);
+}
+.css {
+  color: rgb(68, 102, 239);
+}
+.js {
+  color: rgb(240, 219, 79);
+}
+.react {
+  color: rgb(97, 218, 251);
+}
+.tailwind {
+  color: rgb(56, 189, 248);
+}
+.bootstrap {
+  color: rgb(156, 116, 216);
+}
+.github {
+  color: rgb(24, 23, 23);
+}
+.figma {
+  color: rgb(255, 90, 203);
+}

@@ -1,0 +1,29 @@
+/* ============================
+   SCROLL UP SCSS 
+   ============================ */
+
+@use "./mixins" as m;
+@use "./variables" as var;
+
+.scrollup {
+  position: fixed;
+  right: 0.7rem;
+  bottom: -50%;
+  padding: 6px;
+  display: inline-flex;
+  border-radius: 0.25rem;
+  @include m.background(var.$body-color, var.$first-color);
+  font-size: 1.25rem;
+  box-shadow: 2px 4px 12px hsla(228, 15%, 8%, 0.6);
+  z-index: var.$z-tooltip;
+  transition: all 0.4s, bottom 1s;
+
+  &:hover {
+    transform: translateY(-0.35rem);
+    box-shadow: 0px 2px 12px hsla(228, 15%, 8%, 0.6);
+  }
+}
+
+.show-scroll {
+  bottom: 3rem;
+}

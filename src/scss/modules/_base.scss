@@ -1,0 +1,76 @@
+/* ============================
+   BASE SCSS 
+   ============================ */
+
+@use "./fonts";
+@use "./mixins" as m;
+@use "./variables" as var;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+body {
+  font-family: var.$body-font;
+  font-size: var(--normal-font-size);
+}
+
+body {
+  @include m.background(var.$body-color, var.$text-color);
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var.$title-color;
+  font-weight: var.$font-medium;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 12%, 25%);
+}
+
+/* Aktif saat mouse di halaman */
+.hovering-scrollbar::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 8%, 35%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  transition: background-color 0.4s ease;
+  &:hover {
+    background-color: hsl(228, 8%, 55%);
+  }
+}

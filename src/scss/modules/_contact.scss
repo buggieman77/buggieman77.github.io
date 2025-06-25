@@ -1,0 +1,48 @@
+/* ============================
+   CONTACT SCSS 
+   ============================ */
+
+@use "./mixins" as m;
+@use "./variables" as var;
+
+.contact__container {
+  padding-top: 1rem;
+}
+
+.contact__form,
+.contact__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+  & textarea {
+    height: 11rem;
+    resize: none;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact__input {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  @include m.background(var.$container-color, var.$title-color);
+
+  &::placeholder {
+    color: var.$text-color;
+  }
+}
+
+.contact__button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var.$title-color;
+}

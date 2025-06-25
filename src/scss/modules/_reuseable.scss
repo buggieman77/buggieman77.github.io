@@ -1,0 +1,49 @@
+/* ============================
+   REUSEABLE SCSS 
+   ============================ */
+
+@use "./mixins" as m;
+@use "./variables" as var;
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+  color: var.$title-color;
+  font-weight: var.$font-semi-bold;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.section__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.section__subtitle span {
+  color: var.$first-color;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+.img__blob {
+  transform: translateY(-135px); /* atur nilai sesuai kebutuhan */
+}

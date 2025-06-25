@@ -1,0 +1,17 @@
+@use "./modules/base";
+@use "./modules/reuseable";
+
+@use "./modules/header";
+
+@use "./modules/home";
+@use "./modules/about";
+@use "./modules/skills";
+@use "./modules/services";
+@use "./modules/projects";
+@use "./modules/contact";
+
+@use "./modules/footer";
+
+@use "./modules/scrollup";
+
+@use "./modules/breakpoints";
